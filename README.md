@@ -1,3 +1,3 @@
 # hometown-homepage
 
-<img src="preview.png">
+<img src="preview.webp">
