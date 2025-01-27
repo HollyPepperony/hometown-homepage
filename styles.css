@@ -1,0 +1,148 @@
+:root {
+    --orchid-pink: #D3A9AF;
+    --mountbatten-pink: #95809A;
+    --ultra-violet: #626290;
+    --champagne-pink: #E9D1C1;
+    --licorice: #0D0106;
+}
+
+body {
+    margin: 0;
+    color: var(--licorice);
+    text-align: center;
+    font-family: "Roboto", "sans-serif";
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    height: 100vh; 
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/city.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.header-container h1, .header-container h2 {
+    opacity: 0.85;
+    border-radius: 20px;
+    padding: 7px 0;
+}
+
+.header-container h1 {
+    background:  var(--mountbatten-pink);
+    font-weight: 900;
+    width: 350px;
+}
+.header-container h2 {
+    background: var(--orchid-pink);
+    font-weight: 700;
+    width: 650px; 
+
+}
+
+.section-activities {
+    background-color: var(--champagne-pink);
+}
+
+.section-activities h3 {
+    margin-top: 0;
+    padding-top: 40px ;
+    font-size: 25px;
+    color: var(--ultra-violet);
+    font-style: bold;
+}
+
+.section-activities h4 {
+    color: var(--ultra-violet);
+}
+
+.activities-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.activities-info {
+    width: 200px;
+}
+
+.activity-item img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.activity-item img:hover {
+    border-radius: 10%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--mountbatten-pink);
+    padding: 30px 0;
+}
+
+.footer a {
+    color: var(--licorice);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+
+
+.avatar {
+    width: 200px;
+    border-radius: 12px;
+}
+
+.card {
+    width: 600px;
+    margin: 20px auto;
+    display: flex;
+    padding: 20px;
+    justify-content:space-around;
+    text-align: center;
+
+    background: #fdfcdc;
+    color: #f07167;
+    border-bottom: 6px solid #fed9b7;
+
+    border-radius: 14px;
+
+    animation-name: changing-colors;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    cursor: grab;
+}
+
+.card:hover {
+    animation-name: swing;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes changing-colors {
+    0% {color: #f07167;
+        border-bottom: 6px solid #fed9b7;}
+    50% {color: #0081a7;
+        border-bottom: 6px solid #00afb9;}
+    100% {color: #f07167;
+        border-bottom: 6px solid #fed9b7;}
+}
+
+@keyframes swing {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(-15deg);}
+ }
